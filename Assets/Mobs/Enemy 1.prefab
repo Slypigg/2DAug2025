@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8075431703366693550}
   - component: {fileID: 2371208302023017068}
   - component: {fileID: 5725479334864779868}
-  - component: {fileID: 2501292678282321704}
+  - component: {fileID: 6098292586376683405}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   lootPrefab: {fileID: 6609080333195119118, guid: 704fd8d4a4e13f5479709ef683c6bc19, type: 3}
+  deathEffectPrefab: {fileID: 0}
 --- !u!60 &5725479334864779868
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -150,26 +151,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+    - - {x: -0.0031957738, y: 0.8248447}
+      - {x: -0.7287151, y: -0.41240963}
+      - {x: 0.021949783, y: -0.39888054}
+      - {x: 0.7126065, y: -0.41615778}
   m_UseDelaunayMesh: 0
---- !u!50 &2501292678282321704
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!60 &6098292586376683405
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2216106557390963092}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -177,7 +173,36 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
+  m_UseDelaunayMesh: 0
