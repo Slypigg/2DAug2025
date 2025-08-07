@@ -1592,6 +1592,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player A
       objectReference: {fileID: 0}
+    - target: {fileID: 2486031931148281415, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_Radius
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486031931148281415, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486031931148281415, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486031931148281415, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739578777387430723, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739578777387430723, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7739578777387430723, guid: 5c021320f40b5bb448d71f0a29821c16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0702
